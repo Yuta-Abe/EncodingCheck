@@ -9,6 +9,9 @@ jobs:
   check-encoding:
     runs-on: ubuntu-latest
 
+    env:
+      CHECK_DIRECTORY: TargetFolder  # チェックするディレクトリを環境変数で指定
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -24,4 +27,5 @@ jobs:
 
       - name: Run encoding check
         run: |
-          python check_encoding.py
+          # Check encoding in the directory specified by the environment variable
+          python check_encoding.py ${{ env.CHECK_DIRECTORY }}
