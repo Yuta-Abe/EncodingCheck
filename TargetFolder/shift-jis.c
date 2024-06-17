@@ -1,1 +1,1 @@
-// �����shift-jis�̃t�@�C���ł��B
+// これはshift-jisのファイルです。今しがた、utf-8に変更しました。
